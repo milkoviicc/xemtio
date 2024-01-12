@@ -1,0 +1,17 @@
+:root {
+    --dark-violet: hsl(256, 26%, 20%);
+    --grayish-blue: hsl(216, 30%, 68%);
+
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(0, 1%, 26%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    --body-font-size: 16px;
+
+    --headings-font: 'DM Serif Display', serif;
+    --headings-weight: 400;
+
+    --body-font: 'Karla', serif;
+    --body-weight: 400;
+    --body-weight-bolder: 700;
+}
