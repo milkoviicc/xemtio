@@ -6,6 +6,7 @@ export const NewImage = styled.img`
     transition: 0.2s ease;
     object-fit: cover;
     border-radius: 7px;
+    aspect-ratio: 16/9;
 
     &:hover {
         opacity: 0.7;
@@ -19,5 +20,10 @@ export const NewImage = styled.img`
     @media screen and (max-width: 768px) {
         width: 75%;
         height: 400px;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        height: auto;
     }
 `;

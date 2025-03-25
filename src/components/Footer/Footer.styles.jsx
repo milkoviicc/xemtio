@@ -11,8 +11,7 @@ export const Wrapper = styled.div`
         display: block;
         margin: 20px auto;
         border-top: 1px solid hsl(0, 1%, 26%);
-        width: 1280px;
-        
+        width: 1000px;
     }
 `;
 
@@ -37,6 +36,10 @@ export const Content = styled.div`
 
     @media screen and (max-width: 768px) {
         gap: 10rem;
+    }
+
+    @media screen and (max-width: 425px) {
+        gap: 4rem;
     }
 `;
 

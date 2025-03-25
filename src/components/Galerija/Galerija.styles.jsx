@@ -9,6 +9,7 @@ export const Content = styled.div`
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    padding: 75px 0;
 
     span {
         display: block;
@@ -19,6 +20,11 @@ export const Content = styled.div`
         @media screen and (max-width: 1350px) {
             margin: 0 50px;
         }
+
+        @media screen and (max-width: 325px) {
+            margin: 0 15px;
+        }
+
     }
 
     h1 {
@@ -31,6 +37,11 @@ export const Content = styled.div`
         @media screen and (max-width: 1350px) {
             padding: 0 50px;
         }
+
+        @media screen and (max-width: 325px) {
+            padding: 0 15px;
+        }
+
     }
 
     select {
@@ -48,6 +59,20 @@ export const Content = styled.div`
 
         &:focus {
             outline: none;
+        }
+
+        @media screen and (max-width: 375px) {
+            width: 225px;
+            margin: 0 50px;
+        }
+
+        @media screen and (max-width: 325px) {
+            width: 225px;
+            margin: 0 15px;
+        }
+
+        @media screen and (max-width: 300px) {
+            margin: 0 15px;
         }
 
     }
@@ -89,19 +114,14 @@ export const Menu = styled.div`
 `;
 
 export const Grid = styled.div`
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 2em;
-    justify-items: center;
-    align-items: center;
     padding: 50px 0;
-
-    @media screen and (max-width: 1350px) {
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    }
+    place-items: center;
 
     @media screen and (max-width: 500px) {
-        margin: 0 -27px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px 10px;
     }
 `;

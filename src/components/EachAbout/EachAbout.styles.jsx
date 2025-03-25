@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    h3 {
+
+    h2 {
         margin-top: 30px;
         font-weight: 700;
         font-family: 'Karla', serif;
@@ -16,12 +17,21 @@ export const Wrapper = styled.div`
         font-family: 'Karla', serif;
         color: hsl(0, 1%, 26%);
 
+        @media screen and (max-width: 1300px) {
+            font-size: 16px;
+        }
+
         @media screen and (max-width: 1100px) {
             padding: 0 100px;
         }
 
         @media screen and (max-width: 768px) {
             padding: 0 25px;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 0;
+            font-size: 16px;
         }
     }
 

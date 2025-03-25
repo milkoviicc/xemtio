@@ -33,6 +33,16 @@ export const Content = styled.div`
             width: 140px;
             height: 100px;
         }
+
+        @media screen and (max-width: 375px) {
+            margin: 0 -30px;
+        }
+
+        @media screen and (max-width: 325px) {
+            width: 100px;
+            height: 80px;
+            margin: 15px -30px;
+        }
     }
 `;
 
@@ -88,8 +98,16 @@ export const MobileMenu = styled.div`
         }
     }
 
-    @media screen and (max-width: 510px) {
-        padding: 40px 50px;
+    button {
+        background-color: transparent;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 30px 50px;
+    }
+
+    @media screen and (max-width: 425px) {
+        padding: 30px 10px;
     }
 
 `;
@@ -126,6 +144,10 @@ export const MenuActive = styled.ul`
             &:hover {
                 color: #feb61d;
             }
+        }
+
+        @media screen and (max-width: 375px) {
+            margin: 0 7px;
         }
     }
 

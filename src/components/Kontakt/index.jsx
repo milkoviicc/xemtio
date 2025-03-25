@@ -1,4 +1,6 @@
 import React from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 import img1 from '../../assets/images/icons/phone.svg';
 import img2 from '../../assets/images/icons/envelope.svg';
@@ -12,11 +14,11 @@ import {Wrapper, Content, Grid, Each, Icon, Phone, Whatsapp, Gmail} from './Kont
 const Kontakt = () => {
     return (
         <Wrapper id="kontakt">
-            <Content>
+            <Content data-aos="fade-up" data-aos-duration={1000}>
                 <span></span>
                 <h1>Kontakt</h1>
                 <Grid>
-                    <Each>
+                    <Each data-aos="fade-up" data-aos-duration={1000}>
                         <Icon>
                             <img src={img1} alt="phone svg" width="24" height="24" />
                         </Icon>
@@ -31,18 +33,18 @@ const Kontakt = () => {
                         </Whatsapp>
                     </Each>
 
-                    <Each>
+                    <Each data-aos="fade-up" data-aos-duration={1000}>
                         <Icon>
                             <img src={img2} alt="email svg" width="24" height="24" />
                         </Icon>
                         <p>Pošaljite nam poruku putem gmaila.</p>
                         <Gmail>
                             <img src={gmail} alt="email svg" type="image/svg+xml" width="24" height="24" />
-                            <a href="mailto:#">xemtiocontact@gmail.com</a>
+                            <a href="mailto:xemtio1458@gmail.com">xemtio1458@gmail.com</a>
                         </Gmail>
                     </Each>
 
-                    <Each>
+                    <Each data-aos="fade-up" data-aos-duration={1000}>
                         <Icon>
                             <img src={img3} alt="location svg" width="24" height="24"/>
                         </Icon>

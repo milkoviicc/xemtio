@@ -1,36 +1,35 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    padding: 50px 0;
     background-color: #f0f0f0;
     position: relative;
+    padding: 50px 0;
 `;
 
 export const Content = styled.div`
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 100vw;
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     span {
         display: block;
         width: 150px;
         border-top: 2px solid hsl(256, 26%, 20%);
         position: relative;
-
-        @media screen and (max-width: 1200px) {
-            margin: 0 50px;
-        }
+        margin: 0;
 
         @media screen and (max-width: 991px) {
-            margin: 0 100px;
+            margin: 0 80px;
         }
 
-        @media screen and (max-width: 700px) {
-            margin: 0 75px;
-        }
-
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 768px) {
             margin: 0 50px;
+        }
+
+        @media screen and (max-width: 425px) {
+            margin: 0 30px;
         }
     }
 
@@ -41,29 +40,28 @@ export const Content = styled.div`
         font-weight: 700;
         color: hsl(256, 26%, 20%);
 
-        @media screen and (max-width: 1200px) {
-            padding: 0 50px;
-        }
-
         @media screen and (max-width: 991px) {
-            padding: 0 100px;
+            padding: 0 80px;
         }
 
-        @media screen and (max-width: 700px) {
-            padding: 0 75px;
-        }
-
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 768px) {
             padding: 0 50px;
         }
+
+        @media screen and (max-width: 425px) {
+            padding: 0 30px;
+        }
     }
 
-    @media screen and (max-width: 1350px) {
-        width: 100vw;
-        padding: 0 100px;
+    @media screen and (max-width: 1550px) {
+        padding: 0 150px;
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1400px) {
+        padding: 0 75px;
+    }
+
+    @media screen and (max-width: 991px) {
         padding: 0;
     }
 `;
@@ -73,30 +71,14 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
-
-    @media screen and (max-width: 1350px) {
-        width: 1100px;
-        grid-gap: .5rem;
-        justify-items: center;
-    }
-
-    @media screen and (max-width: 1200px) {
-        width: 1000px;
-        padding: 0 75px;
-    }
-
-    @media screen and (max-width: 1100px) {
-        width: 900px;
-        padding: 0 40px;
-    }
+    text-align: center;
+    padding: 100px 0;
 
     @media screen and (max-width: 991px) {
         grid-template-columns: repeat(1, 1fr);
         gap: 3rem;
-    }
-
-    @media screen and (max-width: 700px) {
-        padding: 0;
+        place-items: center;
+        width: 100vw;
     }
 `;
 
@@ -135,18 +117,6 @@ export const Each = styled.div`
         @media screen and (max-width: 1350px) {
             width: 100%;
         }
-
-        @media screen and (max-width: 991px) {
-            width: 70%;
-        }
-
-        @media screen and (max-width: 768px) {
-            width: 65%;
-        }
-
-        @media screen and (max-width: 575px) {
-            width: 45%;
-        }
     }
 
     @media screen and (max-width: 1350px) {
@@ -157,10 +127,8 @@ export const Each = styled.div`
         text-align: left;
     }
 
-    @media screen and (max-width: 650px) {
-        position: relative;
-        top: 0;
-        left: -25px;
+    @media screen and (min-width: 991px) {
+        place-items: center;
     }
 `;
 
