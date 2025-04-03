@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
     position: relative;
     max-height: 100vh;
     height: 860px;
-    background: url("https://xemtio.netlify.app/assets/kuhinja4-z7vsBTpO.webp");
+    background: url("https://xemtio.vercel.app/assets/kuhinja4.webp");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
