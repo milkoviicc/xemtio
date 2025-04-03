@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
     position: relative;
     max-height: 100vh;
     height: 860px;
-    background: ("/assets/images/kuhinja4-z7vsBTpO.webp");
+    background: url("/assets/images/kuhinja4-z7vsBTpO.webp");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
